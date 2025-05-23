@@ -1,0 +1,42 @@
+html{
+    font-size: 16px;
+    font-family: 'Outfit', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background: hsl(30, 54%, 90%);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.card{
+    background: white;
+    border-radius: 10px;
+    width: auto;
+    padding: 2rem;
+    max-width: 600px;
+}
+
+h1, h2{
+    font-family: 'Young Serif', sans-serif;
+}
+
+.prep{
+    background: hsl(330, 100%, 98%);
+}
+
+
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
