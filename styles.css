@@ -1,37 +1,96 @@
 html{
-    font-size: 16px;
+    font-size: 13px;
     font-family: 'Outfit', sans-serif;
 }
 
 body{
-    height: 100vh;
     background: hsl(30, 54%, 90%);
-    color: black;
+    color: hsl(30, 10%, 34%);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     padding: 2rem;
-}
-
-.card{
-    background: white;
-    border-radius: 10px;
-    width: auto;
-    padding: 2rem;
-    max-width: 600px;
+    box-sizing: border-box;
+    margin: 0;
 }
 
 h1, h2{
     font-family: 'Young Serif', sans-serif;
+    font-weight: 400;
+}
+
+h1{
+    color: hsl(24, 5%, 18%);
+    font-size: 2.2rem;
+    margin: 1rem 0;
+}
+
+h2{
+    color: hsl(14, 45%, 36%);
+}
+
+h3{
+    margin: 0;
+    padding-left: 1rem;
+    line-height: 1rem;
+    color: hsl(332, 51%, 32%);
+}
+
+.card{
+    background: white;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 600px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    box-sizing: border-box;
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 0;
+    object-fit: cover;
+}
+
+hr{
+  border: none;
+  border-top: 1px solid hsl(30, 10%, 80%);
+  margin: 0;
+  width: 100%;
+}
+
+.prep, .ingredients, .instructions{
+    line-height: 2rem;
+    word-spacing: 0.1rem;
 }
 
 .prep{
     background: hsl(330, 100%, 98%);
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1.5rem 1rem 0.5rem;
+    border-radius: 12px;
 }
 
+.prep li::marker{
+    color: hsl(332, 51%, 32%);
+}
 
+.ingredients li::marker, .instructions li::marker{
+    color: hsl(14, 45%, 36%);
+}
+
+.instructions{
+}
+.instructions li::marker{
+    font-weight: 700;
+}
 
 .attribution { 
     font-size: 11px; text-align: center; 
