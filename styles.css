@@ -1,5 +1,5 @@
 html{
-    font-size: 13px;
+    font-size: 16px;
     font-family: 'Outfit', sans-serif;
 }
 
@@ -11,7 +11,6 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding: 2rem;
     box-sizing: border-box;
     margin: 0;
 }
@@ -42,7 +41,7 @@ h3{
     background: white;
     border-radius: 15px;
     width: 100%;
-    max-width: 600px;
+    max-width: 700px;
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -86,10 +85,40 @@ hr{
     color: hsl(14, 45%, 36%);
 }
 
-.instructions{
+.ingredients ul, .instructions ol{
+    padding-left: 1.5rem;
 }
+
 .instructions li::marker{
     font-weight: 700;
+}
+
+table {
+    width: 100%; 
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    text-align: left;
+    padding: 12px 15px;
+}
+
+th{
+    font-weight: 400;
+}
+
+td{
+    font-weight: bold;
+    color: hsl(14, 45%, 36%);
+}
+
+tr {
+    border-bottom: 1px solid #ddd;
+}
+
+tr:last-child {
+    border-bottom: none; /* optional, for cleaner look */
 }
 
 .attribution { 
@@ -97,5 +126,6 @@ hr{
 }
 
 .attribution a { 
-    color: hsl(228, 45%, 44%); 
+    color: hsl(14, 45%, 36%); 
 }
+
